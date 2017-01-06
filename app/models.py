@@ -14,7 +14,7 @@ class Role(db.Model):
     name = db.Column(db.String(64), unique=True)
     user = db.relationship('User', backref='role')
 
-    def __repr__j(self):
+    def __repr__(self):
         return "<Role %r>" % self.name
 
 
